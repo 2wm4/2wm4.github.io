@@ -102,8 +102,8 @@
         <h2 id="学习笔记主要记录本学期以来学常见的Linux命令"><a href="#学习笔记主要记录本学期以来学常见的Linux命令" class="headerlink" title="学习笔记主要记录本学期以来学常见的Linux命令"></a>学习笔记主要记录本学期以来学常见的Linux命令</h2><h3 id="1、目录管理"><a href="#1、目录管理" class="headerlink" title="1、目录管理"></a>1、目录管理</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><table>
 <thead>
 <tr>
-<th align="right">表头1</th>
-<th align="right">表头2</th>
+<th align="right">命令</th>
+<th align="right">作用</th>
 </tr>
 </thead>
 <tbody><tr>
@@ -122,36 +122,404 @@
 <td align="right">pwd</td>
 <td align="right">查看当前工作目录</td>
 </tr>
+<tr>
+<td align="right">cp（-i -r）</td>
+<td align="right">复制文件或目录</td>
+</tr>
+<tr>
+<td align="right">mkdir</td>
+<td align="right">创建目录</td>
+</tr>
+<tr>
+<td align="right">mkdir -p</td>
+<td align="right">创建有层次结构的目录</td>
+</tr>
+<tr>
+<td align="right">rmdir</td>
+<td align="right">删除目录</td>
+</tr>
+<tr>
+<td align="right">rmdir -p</td>
+<td align="right">删除有层次结构的目录</td>
+</tr>
+<tr>
+<td align="right">mv ，mv -i（提示）</td>
+<td align="right">移动文件或目录，重命名</td>
+</tr>
+<tr>
+<td align="right">rm ，rm -i（提示）</td>
+<td align="right">删除文件或目录</td>
+</tr>
+<tr>
+<td align="right">rm -r</td>
+<td align="right">递归删除（删除目录必选）</td>
+</tr>
+<tr>
+<td align="right">rm -f</td>
+<td align="right">强制删除，会覆盖-i选项</td>
+</tr>
+<tr>
+<td align="right">rm -rf</td>
+<td align="right">强制删除，无法恢复</td>
+</tr>
+<tr>
+<td align="right">du(du -ms; du -ks)</td>
+<td align="right">查看文件或目录的磁盘使用情况</td>
+</tr>
+<tr>
+<td align="right">df</td>
+<td align="right">查看系统磁盘空间占用情况</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
 </tbody></table>
-<p>cp （-i -r）</p>
-<p>复制文件或目录</p>
-<p>mkdir</p>
-<p>创建目录</p>
-<p>mkdir -p</p>
-<p>创建有层次结构的目录</p>
-<p>rmdir</p>
-<p>删除目录</p>
-<p>rmdir -p</p>
-<p>删除有层次结构的目录</p>
-<p>mv ，mv -i（提示）</p>
-<p>移动文件或目录，重命名</p>
-<p>rm ，rm -i（提示）</p>
-<p>删除文件或目录</p>
-<p>rm -r</p>
-<p>递归删除（删除目录必选）</p>
-<p>rm -f</p>
-<p>强制删除，会覆盖-i选项</p>
-<p>rm -rf</p>
-<p>强制删除，无法恢复</p>
-<p>du(du -ms; du -ks)</p>
-<p>查看文件或目录的磁盘使用情况</p>
-<p>df</p>
-<p>查看系统磁盘空间占用情况</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3>
+<h3 id="2、文件管理"><a href="#2、文件管理" class="headerlink" title="2、文件管理"></a>2、文件管理</h3><h4 id="-1"><a href="#-1" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">vi</td>
+<td align="right">文本编辑（普通、插入、命令模式）</td>
+</tr>
+<tr>
+<td align="right">h j k l</td>
+<td align="right">移动光标（对应：← ↓ ↑ →）</td>
+</tr>
+<tr>
+<td align="right">x</td>
+<td align="right">删除光标所在字符</td>
+</tr>
+<tr>
+<td align="right">X</td>
+<td align="right">删除光标前的字符</td>
+</tr>
+<tr>
+<td align="right">i</td>
+<td align="right">在光标前插入字符insert</td>
+</tr>
+<tr>
+<td align="right">I</td>
+<td align="right">在行首插入字符</td>
+</tr>
+<tr>
+<td align="right">a</td>
+<td align="right">在光标后插入字符append</td>
+</tr>
+<tr>
+<td align="right">A</td>
+<td align="right">在行末插入字符</td>
+</tr>
+<tr>
+<td align="right">o（小写）</td>
+<td align="right">在行的下方插入新行open a newline</td>
+</tr>
+<tr>
+<td align="right">O（大写）</td>
+<td align="right">在行的上方插入新行</td>
+</tr>
+<tr>
+<td align="right">dd</td>
+<td align="right">删除整行</td>
+</tr>
+<tr>
+<td align="right">J</td>
+<td align="right">连接两行</td>
+</tr>
+<tr>
+<td align="right">yy</td>
+<td align="right">复制</td>
+</tr>
+<tr>
+<td align="right">p或P</td>
+<td align="right">粘贴</td>
+</tr>
+<tr>
+<td align="right">u</td>
+<td align="right">撤销上一操作undo</td>
+</tr>
+<tr>
+<td align="right">Ctrl+r</td>
+<td align="right">重新执行被撤销的命令redo</td>
+</tr>
+<tr>
+<td align="right">:w （:w!）</td>
+<td align="right">保存（强制保存）</td>
+</tr>
+<tr>
+<td align="right">:wq / :x</td>
+<td align="right">保存退出</td>
+</tr>
+<tr>
+<td align="right">:q （:q!）</td>
+<td align="right">退出（不保存强制退出）</td>
+</tr>
+<tr>
+<td align="right">ZZ</td>
+<td align="right">普通模式下保存退出</td>
+</tr>
+<tr>
+<td align="right">touch</td>
+<td align="right">新建空文件</td>
+</tr>
+<tr>
+<td align="right">ln (-s -d)</td>
+<td align="right">创建链接文件（软链接、硬链接）</td>
+</tr>
+<tr>
+<td align="right">cat (-n)</td>
+<td align="right">查看或连接文本文件（显示行编号）</td>
+</tr>
+<tr>
+<td align="right">more</td>
+<td align="right">翻页显示文本文件内容</td>
+</tr>
+<tr>
+<td align="right">less</td>
+<td align="right">翻页显示文本文件内容，文本搜索</td>
+</tr>
+<tr>
+<td align="right">less / 关键字</td>
+<td align="right">正向查找（n下一项，N上一项）</td>
+</tr>
+<tr>
+<td align="right">less ？关键字</td>
+<td align="right">反向查找（n下一项，N上一项）</td>
+</tr>
+<tr>
+<td align="right">head -N</td>
+<td align="right">查看前N行（默认10行）</td>
+</tr>
+<tr>
+<td align="right">tail -N</td>
+<td align="right">查看后N行</td>
+</tr>
+<tr>
+<td align="right">tail -f</td>
+<td align="right">进入文本文件监控</td>
+</tr>
+<tr>
+<td align="right">Ctrl+c</td>
+<td align="right">退出监控</td>
+</tr>
+<tr>
+<td align="right">find(-name -mtime -size -user -group -type -perm)</td>
+<td align="right">以各种属性搜索文件或目录信息</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="3、系统和网络管理命令"><a href="#3、系统和网络管理命令" class="headerlink" title="3、系统和网络管理命令"></a>3、系统和网络管理命令</h3><h4 id="-2"><a href="#-2" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">ps （-ef）</td>
+<td align="right">查看进程状态（查看所有进程）</td>
+</tr>
+<tr>
+<td align="right">ps aux（</td>
+<td align="right">grep 关键字）</td>
+</tr>
+<tr>
+<td align="right">top -d N</td>
+<td align="right">对系统资源监控,每N秒刷新一次</td>
+</tr>
+<tr>
+<td align="right">kill（-2  -15  -9）</td>
+<td align="right">中断进程、终止进程、杀死进程</td>
+</tr>
+<tr>
+<td align="right">ifconfig</td>
+<td align="right">查看网络设备信息</td>
+</tr>
+<tr>
+<td align="right">ping</td>
+<td align="right">查看网络上的主机是否在工作</td>
+</tr>
+<tr>
+<td align="right">netstat</td>
+<td align="right">查看网络程序打开的端口信息</td>
+</tr>
+<tr>
+<td align="right">netstat -anp</td>
+<td align="right">查看所有端口信息</td>
+</tr>
+<tr>
+<td align="right">netstat -anp</td>
+<td align="right">grep 关键字</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="4、磁盘管理命令"><a href="#4、磁盘管理命令" class="headerlink" title="4、磁盘管理命令"></a>4、磁盘管理命令</h3><h4 id="-3"><a href="#-3" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">df</td>
+<td align="right">查看系统的磁盘占用情况</td>
+</tr>
+<tr>
+<td align="right">df -h</td>
+<td align="right">以高的可读性来显示信息</td>
+</tr>
+<tr>
+<td align="right">du</td>
+<td align="right">查看文件或目录的磁盘使用空间</td>
+</tr>
+<tr>
+<td align="right">du -s</td>
+<td align="right">只列出最后加总的值</td>
+</tr>
+<tr>
+<td align="right">du -b</td>
+<td align="right">以byte为单位显示文件大小</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="5、用户管理命令"><a href="#5、用户管理命令" class="headerlink" title="5、用户管理命令"></a>5、用户管理命令</h3><h4 id="-4"><a href="#-4" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">useradd</td>
+<td align="right">创建用户</td>
+</tr>
+<tr>
+<td align="right">userdel</td>
+<td align="right">删除用户</td>
+</tr>
+<tr>
+<td align="right">passwd</td>
+<td align="right">设置用户密码</td>
+</tr>
+<tr>
+<td align="right">su</td>
+<td align="right">切换用户</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="6、权限管理命令"><a href="#6、权限管理命令" class="headerlink" title="6、权限管理命令"></a>6、权限管理命令</h3><h4 id="-5"><a href="#-5" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">chmod -R</td>
+<td align="right">修改文件或目录权限(递归)</td>
+</tr>
+<tr>
+<td align="right">chmod u+x file1</td>
+<td align="right">给用户添加file1的执行权限</td>
+</tr>
+<tr>
+<td align="right">chmod go+rwx file1</td>
+<td align="right">给用户组和其他用户添加file1的读写执行的权限</td>
+</tr>
+<tr>
+<td align="right">chmod 777 file1</td>
+<td align="right">给所有用户添加file1的读写执行的权限</td>
+</tr>
+<tr>
+<td align="right">chmod 744 file1</td>
+<td align="right">给用户读写执行的权限，用户组只读的权限，其他用户只读的权限</td>
+</tr>
+<tr>
+<td align="right">chown -R</td>
+<td align="right">修改用户权限(递归)</td>
+</tr>
+<tr>
+<td align="right">chgrp -R</td>
+<td align="right">修改用户组权限(递归)</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="7、安装卸载"><a href="#7、安装卸载" class="headerlink" title="7、安装卸载"></a>7、安装卸载</h3><h4 id="-6"><a href="#-6" class="headerlink" title=""></a></h4><table>
+<thead>
+<tr>
+<th align="right">命令</th>
+<th align="right">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">rpm -qa</td>
+<td align="right">查看包</td>
+</tr>
+<tr>
+<td align="right">rpm -ivh</td>
+<td align="right">安装包</td>
+</tr>
+<tr>
+<td align="right">rpm -e</td>
+<td align="right">卸载包</td>
+</tr>
+<tr>
+<td align="right">tar -cvf</td>
+<td align="right">打包</td>
+</tr>
+<tr>
+<td align="right">tar -xvf</td>
+<td align="right">解压tar包</td>
+</tr>
+<tr>
+<td align="right">unzip</td>
+<td align="right">解压zip包</td>
+</tr>
+<tr>
+<td align="right">tar -czvf</td>
+<td align="right">用gzip压缩</td>
+</tr>
+<tr>
+<td align="right">tar -xzvf</td>
+<td align="right">用gzip解压</td>
+</tr>
+<tr>
+<td align="right">tar -cjvf</td>
+<td align="right">用bzip2压缩</td>
+</tr>
+<tr>
+<td align="right">tar -xjvf</td>
+<td align="right">用bzip2解压</td>
+</tr>
+<tr>
+<td align="right">####</td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/29/learn/" data-id="clca5zbri0000y4v192vbbj00" data-title="学习笔记" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/29/learn/" data-id="clca6l8590000lsv11j115i92" data-title="学习笔记" class="article-share-link">Share</a>
       
       
       
@@ -209,7 +577,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/29/work/" data-id="clca5zbrt0005y4v14xok7wbc" data-title="Linux大作业" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/29/work/" data-id="clca6l85j0005lsv1ea8t2xvl" data-title="Linux大作业" class="article-share-link">Share</a>
       
       
       
