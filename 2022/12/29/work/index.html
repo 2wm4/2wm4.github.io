@@ -13,15 +13,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Linux期末大作业主要分为3部分：第一部分为git的安装：git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载(https:&#x2F;&#x2F;mirrors.edge.kernel.org&#x2F;pub&#x2F;software&#x2F;scm&#x2F;git&#x2F;)第二部分为在Linux环境下查看常见的系统资源占用1.内存监控1$ free -m 2.查看磁盘容量12$ df$ df -h 3.查看磁盘分区表信">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://raw.githubusercontent.com/2wm4/2wm4.github.io/main/1.png">
+<meta property="og:image" content="https://github.com/2wm4/2wm4.github.io/blob/main/829eb495cc6f498a088152abe2e5fc1.png">
 <meta property="article:published_time" content="2022-12-29T11:31:02.000Z">
-<meta property="article:modified_time" content="2022-12-30T06:19:11.657Z">
+<meta property="article:modified_time" content="2022-12-30T06:28:18.683Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="nodejs">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/2wm4/2wm4.github.io/main/1.png">
+<meta name="twitter:image" content="https://github.com/2wm4/2wm4.github.io/blob/main/829eb495cc6f498a088152abe2e5fc1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -112,19 +112,19 @@
 <h4 id="4-磁盘io监控"><a href="#4-磁盘io监控" class="headerlink" title="4.磁盘io监控"></a>4.磁盘io监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ iostat( *注意要按照好sysstat模块* )</span><br><span class="line">$ iostat -x -k 1( *注意要按照好sysstat模块* )</span><br></pre></td></tr></tbody></table></figure>
 <h4 id="5-网络监控"><a href="#5-网络监控" class="headerlink" title="5.网络监控"></a>5.网络监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ netstat</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"><a href="#第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上" class="headerlink" title="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"></a>第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>1.先配置好git和nodejs环境<br>2.配置hexo，如图<br><img src="https://raw.githubusercontent.com/2wm4/2wm4.github.io/main/1.png" alt="配置图"></p>
+<h3 id="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"><a href="#第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上" class="headerlink" title="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"></a>第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>1.先配置好git和nodejs环境<br>2.配置hexo，如图<br><img src="https://github.com/2wm4/2wm4.github.io/blob/main/829eb495cc6f498a088152abe2e5fc1.png" alt="配置图"></p>
 <h4 id="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"><a href="#其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接" class="headerlink" title="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"></a>其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接</h4><p>3.命令行下安装cnpm</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry==https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
 <p>4.命令行下安装hexo</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></tbody></table></figure>
 <p>5.在自己喜欢的位置创建一个空白文件夹，然后右键打开git base here，输入以下代码推送到远程仓库</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d </span><br></pre></td></tr></tbody></table></figure>
-<p>6.到这里就已经把博客搭建完毕，并且部署到服务器，剩下的就是使用Markdown语法编写网站内容，而网站内容<br>就在/空部文件夹/source/_posts/ 下面的md文件里，最后使用Markdown语法编写自己喜欢的内容即可</p>
+<p>6.到这里就已经把博客搭建完毕，并且部署到服务器，剩下的就是使用Markdown语法编写网站内容，而网站内容<br>就在/空部文件夹/source/_posts/ 下面的md文件里，最后使用Markdown语法编写自己喜欢的内容即可。<br>启动如下图<br>![hexo clean&amp;&amp;hexo g]<a target="_blank" rel="noopener" href="https://github.com/2wm4/2wm4.github.io/blob/main/0cb3bc0a27ab22ab69b8fb3ae9b19a3.png">https://github.com/2wm4/2wm4.github.io/blob/main/0cb3bc0a27ab22ab69b8fb3ae9b19a3.png</a><br>![hexo d]<a target="_blank" rel="noopener" href="https://github.com/2wm4/2wm4.github.io/blob/main/10df02ff7874283da40b08b280a1f59.png">https://github.com/2wm4/2wm4.github.io/blob/main/10df02ff7874283da40b08b280a1f59.png</a><br>![hexo d]<a target="_blank" rel="noopener" href="https://github.com/2wm4/2wm4.github.io/blob/main/c984c98e35a6c6b15cbdc9a586f503c.png">https://github.com/2wm4/2wm4.github.io/blob/main/c984c98e35a6c6b15cbdc9a586f503c.png</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/29/work/" data-id="clca4lsbu000428v1g4vl4u42" data-title="Linux大作业" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/29/work/" data-id="clca4w0p30007ysv10epjg43h" data-title="Linux大作业" class="article-share-link">Share</a>
       
       
       
