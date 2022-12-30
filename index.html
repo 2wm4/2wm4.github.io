@@ -73,6 +73,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-work" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/29/work/" class="article-date">
+  <time class="dt-published" datetime="2022-12-29T11:31:02.000Z" itemprop="datePublished">2022-12-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%BD%9C%E4%B8%9A/">作业</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/29/work/">Linux大作业</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Linux期末大作业主要分为3部分："><a href="#Linux期末大作业主要分为3部分：" class="headerlink" title="Linux期末大作业主要分为3部分："></a>Linux期末大作业主要分为3部分：</h2><h3 id="第一部分为git的安装："><a href="#第一部分为git的安装：" class="headerlink" title="第一部分为git的安装："></a>第一部分为git的安装：</h3><h4 id="git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载-https-mirrors-edge-kernel-org-pub-software-scm-git"><a href="#git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载-https-mirrors-edge-kernel-org-pub-software-scm-git" class="headerlink" title="git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载(https://mirrors.edge.kernel.org/pub/software/scm/git/)"></a>git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载(<a target="_blank" rel="noopener" href="https://mirrors.edge.kernel.org/pub/software/scm/git/">https://mirrors.edge.kernel.org/pub/software/scm/git/</a>)</h4><h3 id="第二部分为在Linux环境下查看常见的系统资源占用"><a href="#第二部分为在Linux环境下查看常见的系统资源占用" class="headerlink" title="第二部分为在Linux环境下查看常见的系统资源占用"></a>第二部分为在Linux环境下查看常见的系统资源占用</h3><h4 id="1-内存监控"><a href="#1-内存监控" class="headerlink" title="1.内存监控"></a>1.内存监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ free -m</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="2-查看磁盘容量"><a href="#2-查看磁盘容量" class="headerlink" title="2.查看磁盘容量"></a>2.查看磁盘容量</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">df</span></span><br><span class="line">$ <span class="built_in">df</span> -h</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="3-查看磁盘分区表信息"><a href="#3-查看磁盘分区表信息" class="headerlink" title="3.查看磁盘分区表信息"></a>3.查看磁盘分区表信息</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo fdisk -l</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="4-磁盘io监控"><a href="#4-磁盘io监控" class="headerlink" title="4.磁盘io监控"></a>4.磁盘io监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ iostat( *注意要按照好sysstat模块* )</span><br><span class="line">$ iostat -x -k 1( *注意要按照好sysstat模块* )</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="5-网络监控"><a href="#5-网络监控" class="headerlink" title="5.网络监控"></a>5.网络监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ netstat</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"><a href="#第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上" class="headerlink" title="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"></a>第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>1.先配置好git和nodejs环境<br>2.配置hexo，如图<br><img src="https://github.com/2wm4/2wm4.github.io/blob/main/829eb495cc6f498a088152abe2e5fc1.png" alt="配置图"></p>
+<h4 id="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"><a href="#其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接" class="headerlink" title="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"></a>其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接</h4><p>3.命令行下安装cnpm</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry==https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
+<p>4.命令行下安装hexo</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></tbody></table></figure>
+<p>5.在自己喜欢的位置创建一个空白文件夹，然后右键打开git base here，输入以下代码推送到远程仓库</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d </span><br></pre></td></tr></tbody></table></figure>
+<p>6.到这里就已经把博客搭建完毕，并且部署到服务器，剩下的就是使用Markdown语法编写网站内容，而网站内容<br>就在/空部文件夹/source/_posts/ 下面的md文件里，最后使用Markdown语法编写自己喜欢的内容即可。<br>启动如下图<br><img src="https://github.com/2wm4/2wm4.github.io/blob/main/0cb3bc0a27ab22ab69b8fb3ae9b19a3.png" alt="hexo clean&amp;&amp;hexo g"><br><img src="https://github.com/2wm4/2wm4.github.io/blob/main/10df02ff7874283da40b08b280a1f59.png" alt="hexo d"><br><img src="https://github.com/2wm4/2wm4.github.io/blob/main/c984c98e35a6c6b15cbdc9a586f503c.png" alt="hexo d"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/29/work/" data-id="clca7x7kx0000t8v1guvzb99y" data-title="Linux大作业" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-learn" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/29/learn/" class="article-date">
@@ -519,69 +577,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/29/learn/" data-id="clca7feeg0000xov1078bbgp7" data-title="学习笔记" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/29/learn/" data-id="clca7x7l90009t8v1crvn7kpg" data-title="学习笔记" class="article-share-link">Share</a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" rel="tag">linux基本命令</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-work" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/29/work/" class="article-date">
-  <time class="dt-published" datetime="2022-12-29T11:31:02.000Z" itemprop="datePublished">2022-12-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E4%BD%9C%E4%B8%9A/">作业</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/29/work/">Linux大作业</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Linux期末大作业主要分为3部分："><a href="#Linux期末大作业主要分为3部分：" class="headerlink" title="Linux期末大作业主要分为3部分："></a>Linux期末大作业主要分为3部分：</h2><h3 id="第一部分为git的安装："><a href="#第一部分为git的安装：" class="headerlink" title="第一部分为git的安装："></a>第一部分为git的安装：</h3><h4 id="git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载-https-mirrors-edge-kernel-org-pub-software-scm-git"><a href="#git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载-https-mirrors-edge-kernel-org-pub-software-scm-git" class="headerlink" title="git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载(https://mirrors.edge.kernel.org/pub/software/scm/git/)"></a>git在虚拟机中相对来说安装很方便，只要虚拟机连得上网，就可以直接去git官网下载(<a target="_blank" rel="noopener" href="https://mirrors.edge.kernel.org/pub/software/scm/git/">https://mirrors.edge.kernel.org/pub/software/scm/git/</a>)</h4><h3 id="第二部分为在Linux环境下查看常见的系统资源占用"><a href="#第二部分为在Linux环境下查看常见的系统资源占用" class="headerlink" title="第二部分为在Linux环境下查看常见的系统资源占用"></a>第二部分为在Linux环境下查看常见的系统资源占用</h3><h4 id="1-内存监控"><a href="#1-内存监控" class="headerlink" title="1.内存监控"></a>1.内存监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ free -m</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="2-查看磁盘容量"><a href="#2-查看磁盘容量" class="headerlink" title="2.查看磁盘容量"></a>2.查看磁盘容量</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">df</span></span><br><span class="line">$ <span class="built_in">df</span> -h</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="3-查看磁盘分区表信息"><a href="#3-查看磁盘分区表信息" class="headerlink" title="3.查看磁盘分区表信息"></a>3.查看磁盘分区表信息</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo fdisk -l</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="4-磁盘io监控"><a href="#4-磁盘io监控" class="headerlink" title="4.磁盘io监控"></a>4.磁盘io监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ iostat( *注意要按照好sysstat模块* )</span><br><span class="line">$ iostat -x -k 1( *注意要按照好sysstat模块* )</span><br></pre></td></tr></tbody></table></figure>
-<h4 id="5-网络监控"><a href="#5-网络监控" class="headerlink" title="5.网络监控"></a>5.网络监控</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ netstat</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"><a href="#第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上" class="headerlink" title="第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上"></a>第三部分为使用Markdown语法结合搭建Hexo，最后发布到github上</h3><h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>1.先配置好git和nodejs环境<br>2.配置hexo，如图<br><img src="https://github.com/2wm4/2wm4.github.io/blob/c6e87eb2ba1535221127af408957542c8975324a/2022/12/29/829eb495cc6f498a088152abe2e5fc1.png" alt="配置图"></p>
-<h4 id="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"><a href="#其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接" class="headerlink" title="其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接"></a>其中repo后面的网址为自己GitHub仓库的https地址，也可以是对应仓库的ssh链接</h4><p>3.命令行下安装cnpm</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry==https://registry.npm.taobao.org</span><br></pre></td></tr></tbody></table></figure>
-<p>4.命令行下安装hexo</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></tbody></table></figure>
-<p>5.在自己喜欢的位置创建一个空白文件夹，然后右键打开git base here，输入以下代码推送到远程仓库</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d </span><br></pre></td></tr></tbody></table></figure>
-<p>6.到这里就已经把博客搭建完毕，并且部署到服务器，剩下的就是使用Markdown语法编写网站内容，而网站内容<br>就在/空部文件夹/source/_posts/ 下面的md文件里，最后使用Markdown语法编写自己喜欢的内容即可。<br>启动如下图<br><img src="https://github.com/2wm4/2wm4.github.io/blob/c6e87eb2ba1535221127af408957542c8975324a/2022/12/29/0cb3bc0a27ab22ab69b8fb3ae9b19a3.png" alt="hexo clean&amp;&amp;hexo g"><br><img src="https://github.com/2wm4/2wm4.github.io/blob/c6e87eb2ba1535221127af408957542c8975324a/2022/12/29/10df02ff7874283da40b08b280a1f59.png" alt="hexo d"><br><img src="https://github.com/2wm4/2wm4.github.io/blob/c6e87eb2ba1535221127af408957542c8975324a/2022/12/29/c984c98e35a6c6b15cbdc9a586f503c.png" alt="hexo d"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/29/work/" data-id="clca7feek0001xov15nfkbbl4" data-title="Linux大作业" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/" rel="tag">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/" rel="tag">nodejs</a></li></ul>
 
     </footer>
   </div>
@@ -643,11 +643,11 @@
       <ul>
         
           <li>
-            <a href="/2022/12/29/learn/">学习笔记</a>
+            <a href="/2022/12/29/work/">Linux大作业</a>
           </li>
         
           <li>
-            <a href="/2022/12/29/work/">Linux大作业</a>
+            <a href="/2022/12/29/learn/">学习笔记</a>
           </li>
         
       </ul>
